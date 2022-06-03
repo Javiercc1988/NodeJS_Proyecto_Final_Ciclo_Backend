@@ -7,18 +7,14 @@ const UserSchema = Schema({
   nombre: {
     type: String,
     required: [true, "El nombre es obligatorio."],
-    // Podemos mandar un array para indicar un mensaje de error además de que es requerido
   },
   apellidos: {
     type: String,
     required: [true, "Los Apellidos son obligatorios."],
-    // Podemos mandar un array para indicar un mensaje de error además de que es requerido
   },
   dni: {
     type: String,
     required: [true, "El DNI es obligatorio."],
-    unique: true,
-    // Podemos mandar un array para indicar un mensaje de error además de que es requerido
   },
   telefono: {
     type: String,

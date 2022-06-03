@@ -48,7 +48,6 @@ router.post(
   [
     check("nombre", "El nombre es obligatorio").not().isEmpty(),
     check("apellidos", "Los apellidos son obligatorios").not().isEmpty(),
-    check("dni", "El dni es obligatorio").not().isEmpty(),
     check(
       "password",
       "El password es obligatorio y debe tener más de 6 caracteres"
